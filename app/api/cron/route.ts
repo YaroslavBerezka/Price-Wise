@@ -1,5 +1,3 @@
-'use server'
-
 import { NextResponse } from "next/server"
 
 import Product from "@/lib/models/product.model"
@@ -8,7 +6,7 @@ import { generateEmailBody, sendEmail } from "@/lib/nodemailer"
 import { scrapeAmazonProduct } from "@/lib/scraper"
 import { getAveragePrice, getEmailNotifType, getHighestPrice, getLowestPrice } from "@/lib/utils"
 
-export const maxDuration = 300 // This function can run for a maximum of 300 seconds
+export const maxDuration = 5 // This function can run for a maximum of 300 seconds
 export const dynamic = "force-dynamic"
 export const revalidate = 0
 
