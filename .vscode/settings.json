@@ -5,6 +5,8 @@
 		"Carhub",
 		"headlessui",
 		"hotspot",
+		"Notif",
+		"Pricewise",
 		"searchbar",
 		"tanstack"
 	],
